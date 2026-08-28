@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "JobPilot 一键填写",
+  "version": "0.1.0",
+  "description": "从本地个人档案辅助填写招聘申请表；不自动提交。",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "JobPilot 一键填写",
+    "default_popup": "popup.html"
+  }
+}
+
