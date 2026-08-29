@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JobPilot 一键填写</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header><span class="mark">J</span><div><strong>JobPilot</strong><small>一键填写 · 本地模式</small></div></header>
+    <section class="notice"><span></span>只处理当前页面，不会点击最终提交</section>
+    <form id="profileForm">
+      <label>姓名<input id="fullName" autocomplete="name" /></label>
+      <label>邮箱<input id="email" type="email" autocomplete="email" /></label>
+      <label>电话<input id="phone" autocomplete="tel" /></label>
+      <label>当前城市<input id="location" autocomplete="address-level2" /></label>
+      <label>学校<input id="school" /></label>
+      <label>专业<input id="major" /></label>
+      <label>LinkedIn<input id="linkedin" /></label>
+      <label>GitHub<input id="github" /></label>
+    </form>
+    <button id="fill" class="primary">一键填写当前页面</button>
+    <button id="save" class="secondary">仅保存档案</button>
+    <div id="result" role="status"></div>
+    <footer>敏感问题、验证码与电子签名始终留给你确认</footer>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
