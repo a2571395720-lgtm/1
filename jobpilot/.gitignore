@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.wrangler/
+.env*
+!.env.example
+*.log
